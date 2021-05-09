@@ -1,0 +1,106 @@
+/*現スマホ対応のため後日修正*/
+@charset "utf-8";
+html {
+  overflow-x: hidden;
+}
+
+body {
+  /*min-height: 100vh;*//*これいる？*/
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(230, 255, 250);
+}
+
+/* p {
+  line-height: 1.7;
+} */
+
+main {
+  /* クラス外側余白 */
+  margin-top: 0px;
+  margin-right: 25%;
+  margin-left: 25%;
+  border-radius: 15px; /* 角の丸み */
+
+  /* クラス内側余白 */
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+
+  /* 追加 */
+  line-height:30px;
+  font-size: 20px;
+}
+@media screen and (max-width: 1800px) {
+  /* main.css */
+  main {
+      margin-top: 0px;
+      margin-right: 15%;
+      margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* main.css */
+  main {
+      margin-top: 0px;
+      margin-right: 10%;
+      margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  /* main.css */
+  main {
+      margin-top: 0px;
+      margin-right: 0%;
+      margin-left: 0%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* main.css */
+  main {
+    /* クラス外側余白 */
+    margin-top: 0px;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  /* header.css */
+  main {
+    /* クラス外側余白 */
+    margin-top: 0px;
+    margin-right: 0%;
+    margin-left: 0%;
+    padding: 10px;
+    font-size: 18px;
+    line-height:25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    /* クラス外側余白 */
+    margin-top: 0px;
+    margin-right: 0%;
+    margin-left: 0%;
+    padding: 10px;
+    font-size: 18px;
+    line-height:25px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  main {
+    /* クラス外側余白 */
+    margin-top: 0px;
+    margin-right: 0%;
+    margin-left: 0%;
+    padding: 10px;
+    font-size: 18px;
+    line-height:25px;
+  }
+}

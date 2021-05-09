@@ -1,0 +1,53 @@
+/* スマホ縦画面 */
+
+@media screen and (max-width: 740px) {
+  /* menu.css */
+  .menu p {
+    font-size: 6vh;
+  }
+  /* menu.css */
+  a.btn--yellow {
+    font-size: 40px;
+  }
+  .background {
+    height: 23vh;
+    /*高さ制限*/
+  }
+}
+
+@media screen and (max-width: 670px) {
+  /* menu.css */
+  .menu p {
+    font-size: 4vh;
+  }
+  /* menu.css */
+  a.btn--yellow {
+    font-size: 18px;
+  }
+  .background {
+    height: 25vh;
+    /*高さ制限*/
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .msr_newslist02 li {
+    font-size: 14px;
+  }
+  .msr_newslist02 li div {
+    width: 144px;
+  }
+  .msr_newslist02 li time {
+    padding-right: 0px;
+  }
+  /* カテゴリの設定 */
+  .msr_newslist02 li .cat01, .msr_newslist02 li .cat02 {
+    font-size: 9px;
+  }
+  
+  .background {
+    height: 15vh;
+    /*高さ制限*/
+  }
+}

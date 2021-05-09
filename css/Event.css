@@ -1,0 +1,118 @@
+
+main {
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+.slide {
+    height: auto;
+    font-size: 20px;
+    line-height: 28px;
+    font-family:"Hannotate SC";
+    font-family:"HanziPen SC", "游ゴシック", YuGothic, "游ゴシック体";
+    font-family: HG正楷書体-PRO, "Segoe UI", "Helvetica Neue", "Hiragino Kaku Gothic ProN", メイリオ, meiryo, sans-serif;
+    margin-bottom: 0px;
+   }
+   .slide1 {
+     background-color: #fff; 
+     background-image: linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+     linear-gradient(#eee .1em, transparent .1em);
+     background-size: 100% 28px;
+   }
+
+   .slide h1 {
+     display: block;
+     font-size: 30px;
+     color: dimgray;
+     text-align: center;
+     margin-bottom: 0px;
+   }
+
+    img{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        
+   }
+
+   .slide h2 {
+    display: block;
+    font-size: 25px;
+    color: dimgray;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    
+ }
+ .slide h3 {
+    display: block;
+    font-size: 25px;
+    color: dimgray;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+ }
+
+   .under1 {
+    background: linear-gradient(transparent 70%, #a8ffac 70%);
+  }
+
+  .under2 {
+    background: linear-gradient(transparent 70%, #ffa8f8 70%);
+  }
+
+  .under3 {
+    background: linear-gradient(transparent 70%, #a8fcff 70%);
+  }
+
+  .under4 {
+    background: linear-gradient(transparent 70%, #fffea8 70%);
+  }
+
+.marker{
+    color: rgba(7, 11, 250, 0.877);
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    main {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    main {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+  }
+
+
+@media screen and (max-width: 320px) {
+    main {
+        margin-right: 0%;
+        margin-left: 0%;
+      }
+}

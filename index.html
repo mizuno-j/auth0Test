@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-195261873-1">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-195261873-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>みずの塾ホームページ(東浦)</title>
+    <meta name="description" content="小学生・中学生を対象とした少人数制の学習塾です。生徒一人ひとりに対応した学習指導が当塾の強みです。東浦町">
+    <meta name="google-site-verification" content="lFUWoopeav_kznhWjgxBVz-1qDKc9ucsl6r5y5913tg" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/forSmartphoneVertical.css">
+    <link rel="stylesheet" href="./css/forSmartphoneHorizontal.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/access.css">
+    <link rel="stylesheet" href="./css/schoolFeature.css"> 
+    <!--以下レスポンシブ対応済み-->
+
+    <link rel="stylesheet" href="./css/InSchoolFlow.css">
+    <link rel="stylesheet" href="./css/introduction.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.2/auth0-spa-js.production.js"></script>
+    <script src="./js/slideshow.js" defer></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/auth0.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- タイトルロゴ -->
+      <img src="./image/Title/title5.jpg" alt="東浦　みずの塾" id="title">
+    </header>
+
+    <main> 
+      <div class="menu" id="menu">  
+        <!-- <script src="./ajax-counter/counter.js"></script>
+        <div class="counter" style="display: none;">アクセスカウンター<br></div> -->
+        <div class="test"style="display: none;">
+          <div class="test-title"></div>
+          <p>試験運用中 4月23日公開</p>
+          <div class="test-title"></div>
+        </div>
+  
+        <p>
+          気になる項目をクリック！！<br>
+        </p>
+
+        <button id="btn-login" disabled="false" onclick="login()">Log in</button>
+        <button id="btn-logout" disabled="false" onclick="logout()">Log out</button>
+
+        <!--各種ボタン　現在５つ-->
+        <div class="zoneChild">
+          <div class="zoneChild_item-Event">
+            <a href="./Event.html" class="btn btn--Event btn--red btn--radius btn--cubic">イベント情報<i class="fas fa-angle-right fa-position-right"></i></a>
+          </div>
+          <div class="zoneChild_item">
+            <a href="#element" class="btn btn--yellow btn--red btn--radius btn--cubic">小学生<i class="fas fa-angle-right fa-position-right"></i></a>
+          </div>
+          <div class="zoneChild_item-Long">
+            <a href="#puzzule"  class="btn btn--yellow-Long btn--red btn--radius btn--cubic">パズル道場 + α<i class="fas fa-angle-right fa-position-right"></i></a>
+          </div>
+          <div class="zoneChild_item">
+            <a href="#hischool"  class="btn btn--yellow btn--red btn--radius btn--cubic">中学生<i class="fas fa-angle-right fa-position-right"></i></a>
+          </div>
+          <div class="zoneChild_item-Long">
+            <a href="#kentei"  class="btn btn--yellow-Long btn--red btn--radius btn--cubic">各種検定のお知らせ<i class="fas fa-angle-right fa-position-right"></i></a>
+          </div>
+        </div>
+      </div> 
+
+      <!-- 黒板風紹介 -->
+      <h2 style="display: none;">みずの塾とは？</h2>
+      <div class="kokuban-s2">
+        みずの塾の特徴は...<br>
+        <div class = "colam">
+          <dev style="margin-left: 1em">
+           ・<span class="under">小学生、中学生</span>を対象とした個人塾<br>
+          </dev>
+          <dev style="margin-left: 1em">
+            ・<span class="under">少人数制の一斉授業</span><br>
+          </dev>
+          <dev style="margin-left: 3em">
+            →だから一人ひとりに目が行き届く<br>
+          </dev>
+          <dev style="margin-left: 1em">
+            ・<span class="under">予習型の学習指導</span><br>
+          </dev>
+          <dev style="margin-left: 3em">
+            →定期テスト対策もバッチリ！<br>
+          </dev> 
+          <div class="txt">
+            <br>
+            「志望校に合格したい」「もっと成績を上げたい」と向上心を持っている方や、
+            「基礎学力不足に気付いたが、どうしていいかわからない...」と悩んでいる方を全力でサポートします。<br>
+            「できない」を「できる」にする成功体験を、一緒に積み重ねていきませんか。<br>
+            <br>
+          </div>
+          <div class="border02">
+            <dev style="margin-left: 1em">
+              生徒一人ひとりに対応した<br>
+            </dev>
+            <dev style="margin-left: 2em">
+              学習指導が本校の強みです！
+            </dev>
+          </div>
+
+          <div class="box26">
+            <span class="box-title">Check</span>
+              <p>・理解、学習不足の生徒に対して授業日以外に補習を行う場合があります<br>
+                ・授業内容は生徒の理解度によって変更する場合があります
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- お知らせ -->
+      <!-- <h2>お知らせ</h2> -->
+      <!--
+      <div class="news">
+        <b>お知らせ欄</b>
+        <ul class="msr_newslist02">
+          <li>
+            <a href="./pdf/Schedule/202104.pdf" target="_blank" rel="noopener noreferrer">
+              <div>
+                <time datetime="2020-12-18">2021.4.12</time>
+                <p class="cat02">日時連絡</p>
+              </div>
+              <p> &rtrif; <u>4月のスケジュール</u></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div>
+                <time datetime="2021-1-10">2021.04.10 </time>
+                <p class="cat03">事務連絡</p>
+              </div>
+              <p> &rtrif; ホームページ開設</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div>
+                <time datetime="2020-12-24">2020.4.1 </time>
+                <p class="cat01">イベント</p>
+              </div>
+              <p> &rtrif; 新学期スタート</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div>
+                <time datetime="2020-12-20">2021.3.25 </time>
+                <p class="cat01">イベント</p>
+              </div>
+              <p> &rtrif; 新年度のスケジュール</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      -->
+
+      <div class="toile">
+        <img src="./image/Flow/room1.png" alt="">
+        <p class="p1"style="margin-right: 1em">
+          ☆第一教室
+        </p>
+      </div>
+
+      <!-- 入塾の流れ -->
+      <div class="inschoolflow">
+        <h2>入塾の流れについて</h2>
+        <div class="flow1">
+          <after>
+            体験授業の申し込み
+          </after>
+        </div>
+        <p>
+          <a href = "#acses_content">電話</a>(16:00～22:00)または
+          <a href="#acses_content">メール</a>からお申し込みください。
+          お名前・学年・学区・体験希望日をお伝えください<br>
+        </p>
+        <div class="flow2">
+          <after>
+            体験授業
+          </after>
+        </div>
+        <p>
+          実際の授業を体験していただけます。<br>
+        </p>
+        <br>
+        <div class="flow2Img">
+          <img src="./image/Flow/flow2_img.jpg" alt="みずの塾、教室">
+          <p class="p1"style="margin-right: 1em">
+            ☆第二教室
+          </p>
+        </div>
+        <div class="flow3">
+          <after>
+            入塾説明
+          </after>
+        </div>
+        <p>
+          体験授業終了後、保護者様にみずの塾についてご説明させていただきます。
+          ご質問、ご相談等ございましたら遠慮なくお申し付けください。
+        </p>
+        <div class="flow4">
+          <after>
+            入塾
+          </after>
+        </div>
+        <p>
+          お子様と保護者様との合意の上、電話・メールにてご連絡下さい。その後に入塾の手続きをさせていただきます。<br>
+        </p>
+      </div>
+      <div class="schoolFeature">
+        <div class="background" id="element">
+          <img src="./image/price/element3.jpg" alt="東浦、塾、みずの塾" id="title">
+        </div>
+        <p>
+          教科書に準拠した算数・国語をおこない、中学生以降の学習に欠かせない「読む力」「書く力」「計算力」を定着させます。<br>
+          総合は、主に漢字と社会に取り組みます。<br>
+          英語は英単語・英文を「元気に読むこと」「丁寧に書くこと」を中心に行います。<br>
+        </p>
+        <div class="tape-box">
+          <div class="tape"></div>
+          <p>授業料(月額)<br>
+            <span class="under3">
+              12,500円(税込)
+            </span>
+          </p>
+        </div>
+        <div class="kome">
+          ※授業料には教材費、維持費、模試代が含まれています。<br>
+          ※初回教材費(5000円)を入塾時にお支払いいただきます。<br>
+          ※夏期・冬期の講習費、また各種検定やイベントの参加費は別途必要です。<br>
+        </div>
+        <table>
+          <tr>
+            <th>開講曜日</th>
+            <th>授業時間</th>
+          </tr>
+          <tr>
+            <td>火・木</td>
+            <td>17:10～19:05</td>
+          </tr>
+        </table>
+        <div class="room1">
+          <img src="./image/Flow/room3.jpg" alt="">
+          <p class="p3">
+            <dev style="margin-right: 3em;">
+              ☆第三教室<br>
+            </dev>
+            自習や懇談に使用
+          </p>
+        </div>
+
+        <div class="background" id="hischool">
+          <img src="./image/price/hischool2.jpg" alt="東浦、塾、みずの塾" id="title">
+        </div>
+        <p>
+          学校の授業が理解できるようにします。
+          知識の定着には復習が欠かせないので、毎回宿題を出します。
+          定期テスト2週間前から、週末などを利用してテスト対策を行います。
+          中学３年生には入試対策を行います。
+          随時個別の質問に答えます。
+        </p>
+        <div class="tape-box">
+          <div class="tape"></div>
+          <p>授業料(月額)<br>
+            <span class="under3">
+              20,000円(税込)
+            </span>
+          </p>
+        </div>
+        <div class="kome">
+          ※授業料には教材費、維持費、模試代が含まれています。<br>
+          ※初回教材費(6000円)を入塾時にお支払いいただきます。<br>
+          ※夏期・冬期の講習費、また各種検定やイベントの参加費は別途必要です。<br>
+        </div>
+        <table>
+          <tr>
+            <th>学年</th>
+            <th>開講曜日</th>
+            <th>授業時間</th>
+          </tr>
+          <tr>
+            <td>中１</td>
+            <td>火・金</td>
+            <td>19:30～21:55</td>
+          </tr>
+          <tr>
+            <td>中２</td>
+            <td>月・木</td>
+            <td>19:30～21:55</td>
+          </tr>
+          <tr>
+            <td>中３</td>
+            <td>月・水</td>
+            <td>16:30～18:55(月)<br>
+                19:30～21:55(水)
+            </td>
+          </tr>
+        </table>
+        <div class="comment">
+          <div class="room3">
+            <img src="./image/Flow/room2.jpg" alt="">
+            <p class="p3">
+              <dev style="margin-right: 1em;">
+                ☆第二教室　<br>
+              </dev>
+              定員12名
+            </p>
+          </div>
+        </div>
+        <div class="background" id="puzzule"> 
+          <img src="./image/price/puzzule2.jpg" alt="東浦、塾、みずの塾" id="title">
+        </div>
+        <p>
+          「覚える前に考える人になろう」「できなくても考えた分だけ賢くなる」を合言葉に、低学年から始められる算数講座です。
+          テキスト問題・Web問題・対戦型教具を用いて、算数のセンス(仮想思考力・イメージ化能力・量感)や非認知能力(主体性・ねばり強さなど)を磨きます。
+          ＋αとして、年齢に応じた国語トレーニングを行います。
+          低学年の脳内スポーツとしてお勧めします！
+        </p>
+        <div class="tape-box">
+          <div class="tape"></div>
+          <p>授業料(月額)<br>
+            <span class="under3">
+              7,200円(税込)
+            </span>
+          </p>
+        </div>
+          <div class="kome">
+            ※別途テキスト代(2冊 各1500円)が10級進級ごとに必要になります。<br>
+          </div>
+        <table>
+          <tr>
+            <th>学年</th>
+            <th>開講曜日</th>
+            <th>授業時間</th>
+          </tr>
+          <tr>
+            <td>年長～小６</td>
+            <td>水・金</td>
+            <td>
+              17:10～18:30(水)<br>
+              16:10～17:30(金)<br>
+              17:45～19:05(金)
+            </td>
+          </tr>
+        </table>
+        <div class="tool">
+          <img src="./image/Flow/tool5.png" alt="">
+          <p>
+            詳しくはこちら↓をクリック<br>
+            <a href="http://www.p-dojo.com/" style="font-size: 130%;">
+              パズル道場公式サイト
+            </a>
+          </p>
+        </div>
+
+        <div class="background" id="kentei">
+          <img src="./image/price/zuynnbi2.jpg" alt="東浦、塾、みずの塾" id="title">
+        </div>
+        <div class="subtitle">
+          2021年度<br>
+          <dev style="margin-left: 1em;">
+            みずの塾実施 試験の日程お知らせ<br>
+          </dev>
+        <br>
+        
+        <div class="kennteitaitle">
+          <div style="margin-left: 1em">
+            英語検定<br>
+          </div>
+        </div>
+        検定開催には10名以上の受検者が必要です。志願者が少ない場合は中止させていただきます。<br>
+        <div class="kentei">
+          <table>
+            <tr>
+              <th></th>
+              <th>一次試験</th>
+              <th>二次Ｂ日程
+                (３級以上)</th>
+              <th>塾内締め切り</th>
+            </tr>
+            <tr>
+              <td>第１回</td>
+              <td>5月29日(土)</td>
+              <td>7月4日(日)</td>
+              <td>4月16日(金)</td>
+            </tr>
+            <tr>
+              <td>第２回</td>
+              <td>10月2日(土)</td>
+              <td>11月14日(日)</td>
+              <td>8月27日(金)</td>
+            </tr>
+            <tr>
+              <td>第３回</td>
+              <td>1月22日(土)</td>
+              <td>2月27日(日)</td>
+              <td>11月26日(金)</td>
+            </tr>
+          </table>
+          検定料<br>
+          <p>
+          　２級 6,500円　　準２級 5,800円<br>
+          　３級 4,800円　　４級 2,900円<br>
+          　５級 2,500円<br>
+          </p>
+           <br>
+           <br>
+           <br>
+
+          <div class="kennteitaitle">
+            <div style="margin-left: 1em">
+              漢字検定<br>
+            </div>
+          </div>
+          検定開催には10名以上の受検者が必要です。志願者が少ない場合は中止させていただきます。<br>
+          <table>
+            <tr>
+              <th></th>
+              <th>検定日</th>
+              <th>塾内締め切り</th>
+            </tr>
+            <tr>
+              <td>第１回</td>
+              <td>6月26日(土)</td>
+              <td>5月14日(金)</td>
+            </tr>
+            <tr>
+              <td>第２回</td>
+              <td>8月28日(土)</td>
+              <td>7月16日(金)</td>
+            </tr>
+            <tr>
+              <td>第３回</td>
+              <td>10月23日(土)</td>
+              <td>9月17日(金)</td>
+            </tr>
+            <tr>
+              <td>第４回</td>
+              <td>1月29日(土)</td>
+              <td>12月10日(金)</td>
+            </tr>
+          </table>
+          検定料<br>
+          <p>
+          　２級 3,500円<br>
+          　準２級・３・４級 2,500円<br>
+          　５・６・７級 2,000円<br>
+          　８・９・１０級 1,500円<br>
+          </p>
+           <br>
+           <br>
+          <div class="kennteitaitle">
+            <div style="margin-left: 1em">
+              数学検定・算数検定<br>
+            </div>
+          </div>
+          検定開催には5名以上の受検者が必要です。志願者が少ない場合は中止させていただきます。<br>
+          <table>
+            <tr>
+              <th></th>
+              <th>検定日</th>
+              <th>塾内締め切り</th>
+            </tr>
+            <tr>
+              <td>第１回</td>
+              <td>8月28日(土)</td>
+              <td>7月16日(金)</td>
+            </tr>
+            <tr>
+              <td>第２回</td>
+              <td>10月16日(土)</td>
+              <td>9月10日(金)</td>
+            </tr>
+            <tr>
+              <td>第３回</td>
+              <td>12月4日(土)</td>
+              <td>10月29日(金)</td>
+            </tr>
+            <tr>
+              <td>第４回</td>
+              <td>3月5日(土)</td>
+              <td>1月28日(金)</td>
+            </tr>
+          </table>
+        </div>
+        <p>
+          検定料<br>
+          　準１級 5,500円
+          　２級 4,800円<br>
+          　準２級 4,000円
+          　３級 3,500円<br>
+          　４・５級 3,000円<br>
+          　６・７・８級 2,500円<br> 
+          　９・１０・１１級 2,000円<br>
+        </p>
+      </div>
+    </div>
+      <div class="tool">
+        <p class="p4"style="margin-right: 1em">
+          ☆屋上風景
+        </p>
+        <img src="./image/Flow/okuzyou3.png" alt="">
+        <img src="./image/Flow/toile.png" alt="">
+        <p class="p3"style="margin-right: 1em">
+         ☆トイレは男女別です
+        </p>
+      </div>
+
+      <div class="test">
+        <div class="test-title"></div>
+          <p>
+            塾生・保護者専用ページを作成予定
+          </p>
+        <div class="test-title"></div>
+      </div>
+
+      <div class="hitokoto">
+        <span class="hitokoto-circle1">
+          コ
+        </span>
+        <span class="hitokoto-circle2">
+          ナ
+        </span>
+        <span class="hitokoto-circle3">
+          策
+        </span>
+        <p>
+          みずの塾では、消毒液の設置と常時換気、机やドアノブ等の定期的な除菌清掃を行っています。
+          講師・塾生のマスク着用も徹底しています。
+        </p>
+      </div>
+
+      <div class="acses_content" >
+        <div class="slider"id="acses_content">
+          アクセス
+          <div class="box11">
+            〒470-2102<br>
+            知多郡東浦町緒川宝前庵13－20<br>
+            <br>
+            TEL：<a href = "tel:0562-82-3776"id="tell">0562-82-3776</a><br>
+            メールアドレス：<br>
+            <a href = "mailto:mizuno-j@ma.medias.ne.jp?subject=問い合わせ&amp;body=ご記入ください"id="access">mizuno-j@ma.medias.ne.jp</a><br>
+            お問い合わせ時間<br>
+            平日16:00～22:00<br>
+            (授業中で出られないこともあります。)
+            <br>
+            <div class="flex">
+              <div class="flexChild">
+                <p>
+                  <br>
+                    アクセス方法<br>
+                    緒川駅　<br>徒歩15分 <br>
+                    尾張森岡駅　<br>徒歩17分<br>
+                </p>
+                <div  class="mapbutton">
+                  <a href="https://www.google.com/maps/place/〒470-2102+愛知県知多郡東浦町緒川宝前庵%EF%BC%91%EF%BC%93−%EF%BC%92%EF%BC%90+みずの塾/@34.986749,136.966816,15z/data=!4m2!3m1!1s0x600482d9274540f5:0x88438edafaaf52f6" target="_blank" rel="noopener noreferrer" class="map">マップを表示</a>
+                </div>
+              </div>
+              <img src="./image/Access/building.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

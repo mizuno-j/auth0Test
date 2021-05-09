@@ -1,0 +1,339 @@
+.acs_content{
+  width: 100%;
+  height: auto;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  font-size: 18px;
+  margin: 2em auto;
+}
+
+b{
+  display:inline; background-color:rgb(173, 244, 247,0.5);
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.inner_slider {
+  /* height: 100px; */
+  position: relative;
+}
+    
+.img1 {
+  position: absolute;
+  /* color: rgba(255, 0, 0, 10); */
+  font-size: 20px;
+  left: 0;
+  top: -75px;
+
+  border: 1px solid rgb(93, 93, 93);
+  background: #f1e767;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+  background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+  -webkit-box-shadow: inset 1px 1px 1px #fff;
+  box-shadow: inset 1px 1px 1px #fff;
+}
+
+.img1:hover{
+  background: -webkit-gradient(linear, left bottom, left top, from(#81757581), to(#ebedee));
+  background: -webkit-linear-gradient(bottom, #81757581 0%, #ebedee 100%);
+  background: linear-gradient(to top, #d3cecec7 0%, #ebedee 100%);
+}
+
+
+.img2 {
+  position: absolute;
+  width: 100px;
+  left: 1990px;
+  /* top: -220px; */
+  top: -630px;
+}
+
+.img3 {
+  position: absolute;
+  /* width: 137vh; */
+  width: 120%;
+  /* height: 100%; */
+  height: 85vh;
+
+  left: 1990px; 
+  /* top: -190px; */
+  top: -600px;
+}
+
+a.btn--bak {
+  color: #FFF;
+  font-size: 30px;
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.inner_slider {
+  position: relative;
+  /* width: 800px; */
+  /* width: 100%; */
+  left: 0;
+  top: 0;
+  transition: all .3s ease-in-out;
+}
+
+#radio_slider1:checked ~ .inner_slider {
+  transform: translateX(0);
+}
+
+#radio_slider2:checked ~ .inner_slider {
+  transform: translateX(-2000px);
+}
+
+.box11{
+  padding: 0.5em 0.5em;
+  /*margin: 2em 0;*/
+  color: #5d627b;
+  background: white;
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  margin-bottom: 10px;
+}
+/*
+.box11 p {
+  margin: 0; 
+  padding: 0;
+}*/
+
+.accessImg {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/*css*/
+.SideBySide p{
+  display:inline-block;
+  vertical-align:top; /*縦方向の揃え位置を指定*/
+
+ }
+
+ .img-container{
+  width: 100%;
+  display:flex;/* flexbox */
+}
+.img-container p{
+  width: 300%;
+  background-color: blanchedalmond;
+}
+.image{
+  height: 100%;/*高さ制限*/
+}
+
+.image > img {
+  width: 100%;
+  height: 200px;
+}
+
+img.example2 { 
+  vertical-align: top; 
+  width: 50%;
+  height: 200px;
+}
+
+img.example5 { 
+  vertical-align: text-top; 
+  width: 40%;
+  height: 200px;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+.flex > img{
+  width: 60%;
+  height: 300px;
+}
+.flexChild{
+    width: 60%;
+}
+
+
+.flexChild p {
+  position: relative;
+  padding: 10px 10px 10px 20px;
+  box-sizing: border-box;
+  font-style: normal;
+  color: #464646;
+  background: #e0e0e0;
+  font-size: 18px;
+}
+
+.flexChild p:before{
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  left: 0px;
+  content: "“";
+  font-family: sans-serif;
+  color: #e0e0e0;
+  font-size: 70px;
+  line-height: 1;
+  z-index: 2;
+  margin-top: 5px;
+}
+
+.flexChild p:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  border-width: 0 0 35px 75px;
+  border-style: solid;
+  border-color: transparent #ffffff;
+}
+
+.hitokoto{
+  background: rgba(215, 253, 205, 0.61);
+  margin: 2em 0;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.hitokoto-circle1{
+  font-size: 16px;
+  line-height: 1.5;
+  position: absolute;
+  margin-top: -37px;
+  font-weight: bold;
+  color: #fff;
+  background-color:#4caf50;
+  border-radius: 50%;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+}
+
+.hitokoto-circle1:after{
+  content: "ロ";
+  position: absolute;
+  margin-top: .2em;
+  font-weight: bold;
+  color: #fff;
+  background-color:#4caf50;
+  border-radius: 50%;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+}
+
+.hitokoto-circle2:before{
+  content: "";
+  position: absolute;
+  top: 100%;
+  margin-left: -12px;
+  border: 5px solid transparent;
+  border-top: 10px solid #4caf50;
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+.hitokoto-circle2{
+  position: absolute;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: -37px;
+  margin-left: 40px;
+  font-weight: bold;
+  color: #fff;
+  background-color:#4caf50;
+  border-radius: 50%;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+}
+
+.hitokoto-circle2:after{
+  content: "対";
+  position: absolute;
+  margin-top: .2em;
+  font-weight: bold;
+  color: #fff;
+  background-color:#4caf50;
+  border-radius: 50%;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+}
+
+.hitokoto-circle2{
+  position: absolute;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: -37px;
+  margin-left: 40px;
+  font-weight: bold;
+  color: #fff;
+  background-color:#4caf50;
+  border-radius: 50%;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+}
+
+.hitokoto-circle3{
+  position: absolute;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: -37px;
+  margin-left: 80px;
+  font-weight: bold;
+  color: #fff;
+  background-color:#4caf50;
+  border-radius: 50%;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+}
+
+.mapbutton{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hitokoto p{
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .slider {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .flexChild p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .flexChild p {
+    font-size: 15px;
+  }
+
+  .flexChild p {
+    padding: 10px 10px 10px 5px;
+  }
+
+}
+
+

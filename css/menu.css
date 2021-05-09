@@ -1,0 +1,318 @@
+/*現スマホ対応のため後日修正*/
+.menu{
+  text-align: center;
+}
+
+.menu p{
+  color: #fff;
+  text-shadow: 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555, -1px -1px 1px #555, 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555, -1px -1px 1px #555, 5px 5px #fff;
+  transform: rotate(-0deg);
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.test {
+  margin: 2em 0;
+  background: #ffdcdc;
+}
+
+.test .test-title {
+  font-size: 1.2em;
+  background: #f55f5f;
+  padding: 4px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.test p {
+  padding: 15px 20px;
+  margin: 0;
+  font-weight: bolder;
+  color: initial;
+  text-shadow: initial;
+}
+
+.zoneChild{
+  display: flex;
+  justify-content:center;
+  /* 折返し指定 */
+  flex-wrap: wrap;
+  /* 折り返し時の配置指定 */ 
+  align-content:center;
+  font-weight: bolder;
+  line-height:35px;
+  margin-top: 10px;
+}
+
+/* 追加 */
+.zoneChild_item-Event{
+  width: 88%;
+}
+
+.zoneChild_item{
+  width: 40%;
+}
+
+.zoneChild_item-Long{
+  width: 60%;
+}
+
+a.btn--Event {
+  /* 追加 */
+  display: block;
+  /* オレンジ部分　表示領域設定 */
+  width: 100%;
+  /* 中央寄せ */
+  margin: 5px 10px;
+  color: #FFF;
+  font-size: 25px;
+  background-color: #130ff0;
+  text-decoration: none;
+}
+
+a.btn--yellow {
+  /* 追加 */
+  display: block;
+  /* オレンジ部分　表示領域設定 */
+  width: 95%;
+  /* 中央寄せ */
+  margin: 5px 50px;
+
+  color: #FFF;
+  font-size: 20px;
+  background-color: #f88e42;
+  text-decoration: none;
+}
+
+a.btn--yellow-Long {
+  /* 追加 */
+  display: block;
+  /* オレンジ部分　表示領域設定 */
+  width: 80%;
+  /* 中央寄せ */
+  margin: 5px 50px;
+
+  color: #FFF;
+  font-size: 20px;
+  background-color: #f88e42;
+  text-decoration: none;
+}
+
+/*以下オプションのため変更不要？*/
+a.btn--red.btn--cubic {
+  border-bottom: 5px solid #9f000c;
+}
+
+a.btn--red.btn--cubic:hover {
+  margin-top: 3px;
+  border-bottom: 2px solid #9f000c;
+}
+
+a.btn--radius {
+  border-radius: 15px;
+}
+
+a.btn--yellowfont {
+  font-size: 20px;
+}
+
+
+@media screen and (min-height: 1300px){
+  .menu p{
+    font-size: 2vh;
+  }
+}
+
+@media screen and (min-width: 1030px) and (max-width: 1800px){
+  .menu p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  
+  .zoneChild{
+    line-height:40px;
+  }
+  
+  a.btn--Event {
+    width: 99%;
+    font-size: 30px;
+    margin: 5px 0px;
+  }
+  
+  a.btn--yellow {
+    font-size: 30px;
+  }
+  
+  a.btn--yellow-Long {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .menu p{
+    font-size: 30px;
+  }
+
+  .zoneChild_item{
+    width: 40%;
+  }
+  
+  .zoneChild_item-Long{
+    width: 60%;
+  }
+
+  a.btn--yellow {
+    /* オレンジ部分　表示領域設定 */
+    width: 70%;
+    /* 中央寄せ */
+    margin: 5px 65px;
+    font-size: 25px;
+  }
+
+  a.btn--yellow-Long {
+    /* オレンジ部分　表示領域設定 */
+    width: 80%;
+    /* 中央寄せ */
+    margin: 5px 20px;
+    font-size: 25px;
+  }
+
+  .zoneChild_item-Event{
+    width: 79%;
+  }
+
+  a.btn--Event {
+    margin: 5px 13px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .menu p{
+    font-size: 7vh;
+  }
+
+  a.btn--yellow {
+    font-size: 20px;
+  }
+}  
+
+@media screen and (max-width: 768px) {
+  .menu p{
+    font-size: 3vh;
+  }
+
+  .zoneChild_item{
+    width: 40%;
+  }
+  
+  .zoneChild_item-Long{
+    width: 60%;
+  }
+
+  a.btn--yellow {
+    /* オレンジ部分　表示領域設定 */
+    width: 70%;
+    /* 中央寄せ */
+    margin: 3px 80px;
+    font-size: 25px;
+  }
+
+  a.btn--yellow-Long {
+    /* オレンジ部分　表示領域設定 */
+    width: 75%;
+    /* 中央寄せ */
+    margin: 3px 25px;
+    font-size: 25px;
+  }
+
+  .zoneChild_item-Event{
+    width: 77%;
+  }
+
+  a.btn--Event {
+    margin: 5px 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu p{
+    font-size: 20px;
+  }
+  
+  .zoneChild_item{
+    width: 40%;
+    font-size: 10px;
+  }
+    
+  .zoneChild_item-Long{
+    width: 60%;
+  }
+  
+  a.btn--yellow {
+    /* オレンジ部分　表示領域設定 */
+    width: 80%;
+    /* 中央寄せ */
+    margin: 5px 15px;
+    font-size: 19px;
+  }
+  
+  a.btn--yellow-Long {
+    /* オレンジ部分　表示領域設定 */
+    width: 90%;
+    /* 中央寄せ */
+    margin: 5px 12px;
+    font-size: 18px;
+  }
+
+  .zoneChild_item-Event{
+    width: 93%;
+  }
+
+  a.btn--Event {
+    margin: 5px 5px;
+  }
+  
+}
+
+@media screen and (max-width: 380px) {
+  /* menu.css */
+  .menu p{
+    font-size: 18px;
+  }
+    
+  a.btn--yellow {
+    font-size: 19px;
+  }
+
+  .zoneChild_item-Event{
+    width: 93%;
+  }
+
+  a.btn--Event {
+    margin: 5px 5px;
+  }
+  
+}
+
+@media screen and (max-width: 360px) {
+  /* menu.css */
+  .menu p{
+    font-size: 18px;
+  }
+    
+  a.btn--yellow {
+    font-size: 19px;
+  }
+
+  .zoneChild_item-Event{
+    width: 93%;
+  }
+
+  a.btn--Event {
+    margin: 5px 5px;
+  }
+  
+}

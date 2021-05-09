@@ -1,0 +1,395 @@
+/*現スマホ対応のため後日修正*/
+/*対応不要？*/
+
+/* 黒板風*/
+.kokuban-s2 {
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  font-weight: bolder; 
+  font-size: 25px;
+  line-height:30px;
+  position: relative;
+  width: 88%; /* ボックス幅 */
+  background: #006633; /* ボックス背景色 */
+  color: #fff; /* 文章色 */
+  border: 8px solid #b2771f; /* 枠線 */
+  border-radius: 3px; /* 角の丸み */
+  box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
+  margin: 2em 0px;
+  padding: 1em;
+ }
+
+  .colam{
+    line-height:45px;
+  }
+
+   /*チョーク*/
+   .kokuban-s2::before,
+   .kokuban-s2::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+   } 
+   .kokuban-s2::before {
+    width: 20px; 
+    right: 10px;
+    border: solid 3px black; /*チョーク（黄色）*/
+    border-radius: 3px 2px 0 2px;
+   }
+   .kokuban-s2::after {
+    width: 15px; 
+    right: 45px;
+    border: solid 3px #fff; /*チョーク（白） */
+    border-radius: 8px 5px 2px 5px;
+   }
+
+   @media screen and (max-width: 1280px) {
+    .kokuban-s2::after {
+      border: solid 3px purple;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .kokuban-s2::after {
+      border: solid 3px blue;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .kokuban-s2::after {
+      border: solid 3px cyan;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .kokuban-s2::after {
+      border: solid 3px green;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .kokuban-s2::after {
+      border: solid 3px yellow;
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+    .kokuban-s2::after {
+      border: solid 3px orange;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .kokuban-s2::after {
+      border: solid 3px red;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .kokuban-s2::after {
+      border: solid 3px rgb(0, 109, 252);
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .kokuban-s2::after {
+      border: solid 3px black;
+    }
+  }
+
+  /* ------------------------------------------------------------------- */
+
+  @media screen and (min-height: 500px) {
+    .kokuban-s2::before  {
+      border: solid 3px red;
+    }
+  }
+
+  @media screen and (min-height: 600px) {
+    .kokuban-s2::before  {
+      border: solid 3px orange;
+    }
+  }
+
+  @media screen and (min-height: 700px) {
+    .kokuban-s2::before  {
+      border: solid 3px yellow;
+    }
+  }
+
+  @media screen and (min-height: 800px) {
+    .kokuban-s2::before  {
+      border: solid 3px green;
+    }
+  }
+
+  @media screen and (min-height: 1000px) {
+    .kokuban-s2::before  {
+      border: solid 3px cyan;
+    }
+  }
+
+  @media screen and (min-height: 1100px) {
+    .kokuban-s2::before  {
+      border: solid 3px blue;
+    }
+  }
+
+  @media screen and (min-height: 1200px) {
+    .kokuban-s2::before  {
+      border: solid 3px purple;
+    }
+  }
+
+  @media screen and (min-height: 1300px) {
+    .kokuban-s2::before  {
+      border: solid 3px white;
+    }
+  }
+
+  .under {
+    background: linear-gradient(transparent 70%, #ff99ab 88%);
+  }
+
+  .under2 {
+    background: linear-gradient(transparent 0, #66b104 0);
+    font-size: 32px;
+    line-height:50px;
+  }
+
+  .fashionable-box3{
+    margin: 1em 0;
+    padding: 1em;
+    box-shadow: 0 0 3px 3px #b2ff59, 0 0 3px 2px #b2ff59 inset;
+    border-radius: 10px;
+    color: #000000; /* 文章色 */
+    background: rgb(255,255,255);
+  }
+  
+  .fashionable-box3 p{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .border02{
+    font-size: 35px;
+    line-height: 45px;
+    color: #eff;
+    text-shadow: 1px 1px 1px #000, -1px 1px 1px #555, 1px -1px 1px #555, -1px -1px 1px #555, 1px 1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555, -1px -1px 1px #555, 4px 4px rgb(0,0,0)/*#9ccc65*/;
+    transform: rotate(-3deg);
+}
+
+.box26 {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #95ccff;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height:25px;
+}
+.box26 .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  background: #006633; /* ボックス背景色 */
+  font-size: 19px;
+  color: #95ccff;
+  font-weight: bold;
+}
+.box26 p {
+  margin: 0; 
+  padding: 0;
+}
+
+@media screen and (min-width: 1030px) and (max-width: 1800px){
+  
+  .kokuban-s2 {
+    font-size: 25px;
+    width: 80%; /* ボックス幅 */
+    margin: 1em auto;
+   }
+
+   .txt{
+    line-height: 30px;
+  }
+
+  .border02{
+    font-size: 45px;
+    line-height: 55px;
+    transform: rotate(-5deg);
+    margin-bottom: 70px;
+  }
+
+  .box26 {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #95ccff;
+    border-radius: 8px;
+    font-size: 23px;
+    line-height:33px;
+  }
+}
+@media screen and (max-width: 1024px) {
+
+  .kokuban-s2 { 
+    font-size: 22px;
+    line-height:30px;
+   }
+
+  .colam{
+    line-height:35px;
+  }
+
+  .under2 {
+    font-size: 18px;
+    line-height:25px;
+  }
+
+  .border02{
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.box26 {
+  font-size: 18px;
+  line-height:28px;
+}
+}
+  @media screen and (max-width: 768px) {
+    .kokuban-s2 { 
+      font-size: 30px;
+      line-height:50px;
+     }
+
+    .colam{
+      line-height:45px;
+    }
+
+    .under2 {
+      font-size: 18px;
+      line-height:25px;
+    }
+
+    .border02{
+      font-size: 40px;
+      line-height: 50px;
+  }
+
+  .box26 {
+    font-size: 25px;
+    line-height:30px;
+  }
+  }
+
+  @media screen and (max-width: 480px) {
+    .kokuban-s2 { 
+      font-size: 15.5px;
+      line-height:18px;
+     }
+
+    .colam{
+      line-height:25px;
+    }
+
+    .under2 {
+      font-size: 18px;
+      line-height:25px;
+    }
+
+    .box26 {
+      font-size: 15.5px;
+      line-height:25px;
+    }
+
+    .border02{
+      font-size: 22px;
+      line-height: 30px;
+  }
+  }
+
+  @media screen and (max-width: 380px) {
+    .kokuban-s2 { 
+      font-size: 15.5px;
+      line-height:18px;
+     }
+
+    .colam{
+      line-height:25px;
+    }
+
+    .under2 {
+      font-size: 18px;
+      line-height:25px;
+    }
+
+    .box26 {
+      font-size: 15.5px;
+      line-height:25px;
+    }
+
+    .border02{
+      font-size: 20px;
+      line-height: 30px;
+  }
+  }
+
+
+  @media screen and (max-width: 360px) {
+    .kokuban-s2 { 
+      font-size: 15.5px;
+      line-height:18px;
+     }
+
+    .colam{
+      line-height:25px;
+    }
+
+    .under2 {
+      font-size: 18px;
+      line-height:25px;
+    }
+
+    .box26 {
+      font-size: 15.5px;
+      line-height:25px;
+    }
+
+    .border02{
+      font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .kokuban-s2 { 
+    font-size: 13px;
+    line-height:18px;
+   }
+
+  .colam{
+    line-height:25px;
+  }
+
+  .under2 {
+    font-size: 18px;
+    line-height:25px;
+  }
+
+  .box26 {
+    font-size: 15.5px;
+    line-height:25px;
+  }
+
+  .border02{
+    font-size: 17px;
+    line-height:25px;
+}
+
+.box26 {
+  font-size: 13px;
+  line-height:25px;
+}
+}
