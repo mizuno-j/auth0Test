@@ -50,7 +50,7 @@ const updateUI = async () => {
   if (isAuthenticated) {
     // document.getElementById("gated-content").classList.remove("hidden");
     console.log("ログイン状態")
-    window.location.href = "/login.html"
+    window.location.href = "https://mizuno-j.github.io/auth0Test/login.html"
 
     // document.getElementById(
     //   "ipt-access-token"
