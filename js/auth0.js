@@ -1,6 +1,8 @@
 'use strict';
 
-const APP_PATH = `/auth0Test`; // https://ユーザー名.github.io/<ココ> or ルートパス利用なら`/`だけでOK
+// const APP_PATH = `/login.html`; // https://ユーザー名.github.io/<ココ> or ルートパス利用なら`/`だけでOK
+const LOGIN_URL = `/auth0Test/login.html`; // https://ユーザー名.github.io/<ココ> or ルートパス利用なら`/`だけでOK
+const LOGOUT_URL = `/auth0Test`; // https://ユーザー名.github.io/<ココ> or ルートパス利用なら`/`だけでOK
 let auth0 = null;
 const fetchAuthConfig = () => fetch("auth_config.json"); // auth_config.json読み込み
 
@@ -50,7 +52,7 @@ const updateUI = async () => {
   if (isAuthenticated) {
     // document.getElementById("gated-content").classList.remove("hidden");
     console.log("ログイン状態")
-    window.location.href = "https://mizuno-j.github.io/auth0Test/login.html"
+    // window.location.href = "/login.html"
 
     // document.getElementById(
     //   "ipt-access-token"
@@ -69,14 +71,20 @@ const updateUI = async () => {
   }
 };
 
+// ログインボタン押下
 const login = async () => {
   await auth0.loginWithRedirect({
-    redirect_uri: window.location.origin + APP_PATH
+    // ログイン後遷移するURL
+    // redirect_uri: window.location.origin + APP_PATH
+    redirect_uri: window.location.origin + LOGIN_URL
   });
 };
 
+// ログアウトボタン押下
 const logout = () => {
   auth0.logout({
-    returnTo: window.location.origin + APP_PATH
+    // ログアウト後遷移するURL
+    // returnTo: window.location.origin
+    returnTo: window.location.origin + LOGOUT_URL
   });
 };
