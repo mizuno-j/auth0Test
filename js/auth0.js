@@ -2,7 +2,7 @@
 
 // const APP_PATH = `/login.html`; // https://ユーザー名.github.io/<ココ> or ルートパス利用なら`/`だけでOK
 const LOGIN_URL = `/auth0Test/login.html`; // https://ユーザー名.github.io/<ココ> or ルートパス利用なら`/`だけでOK
-const LOGOUT_URL = `/auth0Test`; // https://ユーザー名.github.io/<ココ> or ルートパス利用なら`/`だけでOK
+const LOGOUT_URL = `/auth0Test/`; // https://ユーザー名.github.io/<ココ> or ルートパス利用なら`/`だけでOK
 let auth0 = null;
 const fetchAuthConfig = () => fetch("auth_config.json"); // auth_config.json読み込み
 
