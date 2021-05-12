@@ -51,6 +51,36 @@
     </header>
 
     <main> 
+      <!-- line友達追加 -->
+    <a href="https://lin.ee/VL3aWTF">
+      <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" border="0">
+    </a>
+
+    <p id="pagetop">
+      　<a href="#"><span>↑</span><br>pagetop</a>
+    </p>
+
+    <script>
+      // ページ途中からpagetop表示用
+      // $('#pagetop').hide();
+      //   $(window).scroll(function () {
+      //     if ($(this).scrollTop() > 300) {
+      //     $('#pagetop').fadeIn();
+      //     } else {
+      //     $('#pagetop').fadeOut();
+      //     }
+      //   });
+        
+      $('#pagetop').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 700);
+        return false;
+      });
+    </script>
+      
+      
+      
       <div class="menu" id="menu">  
         <!-- <script src="./ajax-counter/counter.js"></script>
         <div class="counter" style="display: none;">アクセスカウンター<br></div> -->
