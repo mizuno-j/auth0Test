@@ -11,6 +11,23 @@ body {
   background-color: rgb(230, 255, 250);
 }
 
+#pagetop {
+  display:inline-block;
+  position:fixed;
+  width: 50%;
+  bottom:0;
+  right:0;
+  z-index: 2;
+ }
+  
+ #pagetop a {
+  padding:20px 10px;
+  display:block;
+  background:#008b8b;
+  color:#fff;
+  text-align:center;
+ }
+
 /* p {
   line-height: 1.7;
 } */
